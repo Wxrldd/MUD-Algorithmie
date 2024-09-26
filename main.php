@@ -4,6 +4,7 @@ use Jugid\Staurie\Component\Console\Console;
 use Jugid\Staurie\Component\Menu\Menu;
 use Jugid\Staurie\Component\Map\Map;
 use Jugid\Staurie\Component\PrettyPrinter\PrettyPrinter;
+use Jugid\Staurie\Component\Inventory\Inventory;
 use Jugid\Staurie\Staurie;
 
 require_once __DIR__.'/vendor/autoload.php'; // modified
@@ -24,8 +25,8 @@ $menu->configuration([
 
 $map = $container->registerComponent(Map::class);
 $map->configuration([
-  'directory' => __DIR__ . '/src/Component/Map',
-  'namespace' => 'Game\Console\Component\Map'
+  'directory' => __DIR__ . '/src/Map',
+  'namespace' => 'Game\Console\Map'
 ]);
 
 $staurie->run(); //start the game
