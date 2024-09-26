@@ -25,8 +25,8 @@ $menu->configuration([
 
 $map = $container->registerComponent(Map::class);
 $map->configuration([
-  'directory' => __DIR__ . '/src/Component/Map',
-  'namespace' => 'Game\Console\Component\Map'
+  'directory' => __DIR__ . '/src/Map',
+  'namespace' => 'Game\Console\Map'
 ]);
 
 $staurie->run(); //start the game

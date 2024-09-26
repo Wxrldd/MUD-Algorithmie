@@ -1,6 +1,6 @@
 <?php
 
-namespace Game\Console\Component\Item;
+namespace Game\Console\Item;
 
 use Jugid\Staurie\Game\Item_Equippable;
 class Gun extends Item_Equippable {
