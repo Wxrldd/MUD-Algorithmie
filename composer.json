@@ -1,0 +1,17 @@
+{
+    "name": "game/console",
+    "require": {
+        "jugid/staurie": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Game\\Console\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Marc-Loulembo",
+            "email": "marcoloulembo@gmail.com"
+        }
+    ]
+}
