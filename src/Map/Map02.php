@@ -8,11 +8,10 @@ use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
 use Game\Console\Character\Negan;
 
-class Map01 extends Blueprint {
-
+class Map02 extends Blueprint {
     private Position $position;
     function __construct() {
-        $this->position = new Position( 0, 0);
+        $this->position = new Position(x: 0,y: 1);
     }
     public function npcs(): array {
         return [ new Negan()];
@@ -26,10 +25,10 @@ class Map01 extends Blueprint {
         return [ new Monsters()];
     }
     public function name(): string {
-        return "The Walking Dead";
+        return "L'attaque des titans";
     }
     public function description(): string {
-        return "Bienvenu(e) jeunes arrivants. Equipez vous de votre arme avant de vous y engager car cet endroit vous réserve bien de surprises";
+        return "Une zone plein de titans, des êtres surhumains";
     }
     public function position(): Position { 
         return $this->position;

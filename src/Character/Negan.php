@@ -2,7 +2,7 @@
 namespace Game\Console\Character;
 
 use Jugid\Staurie\Game\Npc;
-class Cain extends Npc {
+class Negan extends Npc {
 public function name() : string {
   return 'Negan';
  }
