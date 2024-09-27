@@ -6,7 +6,7 @@ use Jugid\Staurie\Game\Monster;
 
 class Negan extends Monster {
 public function name() : string { 
-  return "Zombie";
+  return "Negan";
 }
 public function description(): string { 
   return "Negan est le méchant le plus redoutable que notre groupe ait jamais affronté. Le chaos c'est lui";
