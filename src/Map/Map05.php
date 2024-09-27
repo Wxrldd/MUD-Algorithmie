@@ -7,7 +7,7 @@ use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
 use Game\Console\Npcs\Lsauveur;
-
+use Game\Console\Item\Rocket;
 
 class Map05 extends Blueprint {
 
@@ -20,7 +20,7 @@ class Map05 extends Blueprint {
     }
 
     public function items(): array {
-        return [ new Gun()];
+        return [ new Rocket() ];
     }
 
     public function monsters(): array {

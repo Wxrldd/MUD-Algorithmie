@@ -2,9 +2,9 @@
 
 namespace Game\Console\Map;
 
+use Game\Console\Item\Ax;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use Game\Console\Item\Gun;
 use Game\Console\Monsters\Jadis;
 use Game\Console\Npcs\Peter;
 
@@ -19,7 +19,7 @@ class Map03 extends Blueprint {
     }
 
     public function items(): array {
-        return [ new Gun()];
+        return [ new Ax()];
     }
 
     public function monsters(): array {
