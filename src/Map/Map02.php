@@ -11,7 +11,7 @@ use Game\Console\Npcs\Chuchoteur;
 class Map02 extends Blueprint {
     private Position $position;
     function __construct() {
-        $this->position = new Position(x: 0,y: 1);
+        $this->position = new Position(0, 1);
     }
     public function npcs(): array {
         return [ new Chuchoteur()];
@@ -26,7 +26,7 @@ class Map02 extends Blueprint {
         return [ new Gouverneur()];
     }
     public function name(): string {
-        return "La communauté";
+        return "Woodbury";
     }
     public function description(): string {
         return "Une zone plein de titans, des êtres surhumains";

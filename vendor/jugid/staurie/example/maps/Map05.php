@@ -3,19 +3,21 @@
 namespace Jugid\Staurie\Example\Maps;
 
 use Jugid\Staurie\Component\Map\Blueprint;
+use Jugid\Staurie\Example\Items\Shield;
+use Jugid\Staurie\Example\Monsters\Bouftou;
 use Jugid\Staurie\Game\Position\Position;
 
-class Map03 extends Blueprint {
+class Map05 extends Blueprint {
 
     private Position $position;
 
     public function __construct()
     {
-        $this->position = new Position(1,0);
+        $this->position = new Position(4,1);
     }
 
     public function name() : string {
-        return 'Flatland';
+        return 'Map 6';
     }
 
     public function description() : string {
@@ -31,10 +33,10 @@ class Map03 extends Blueprint {
     }
 
     public function items() : array {
-        return [];
+        return [new Shield()];
     }
 
     public function monsters() : array {
-        return [];
+        return [new Bouftou()];
     }
 }
