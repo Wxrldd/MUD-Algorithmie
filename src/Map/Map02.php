@@ -2,6 +2,7 @@
 
 namespace Game\Console\Map;
 
+use Game\Console\Item\Cailloux;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
@@ -11,14 +12,17 @@ use Game\Console\Npcs\Jack;
 class Map02 extends Blueprint {
     private Position $position;
     function __construct() {
-        $this->position = new Position(x: 0,y: 1);
+        $this->position = new Position( 0, 1);
     }
     public function npcs(): array {
         return [ new Jack()];
     }
 
     public function items(): array {
-        return [ new Gun()];
+        return [ 
+            new Gun(),
+            new Cailloux()
+    ];
 
     }
 

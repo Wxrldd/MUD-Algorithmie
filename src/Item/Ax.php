@@ -11,12 +11,12 @@ public function description(): string {
   return "Arme légère transport facile";
 }
 public function body_part(): string {
-  return "Hand";
+  return "hand";
  }
 public function statistics(): array {
   return [
     "Damage" => 2,
-    "Wisdom" => 2
+    "Reach" => 1
   ];
  }
 }

@@ -10,7 +10,7 @@ use Jugid\Staurie\Component\Character\MainCharacter;
 
 require_once __DIR__ . '/vendor/autoload.php'; // modified
 
-$staurie = new Staurie(name: 'Luky Luke');
+$staurie = new Staurie(name: 'Welcome to Hell ☻');
 
 $staurie->register([Console::class, PrettyPrinter::class, Menu::class, Inventory::class]);
 
@@ -20,7 +20,7 @@ $character = $container->registerComponent(MainCharacter::class);
 
 $menu = $container->registerComponent(Menu::class);
 $menu->configuration([
-    'text' => 'Welcome to this awesome test adventure',
+    'text' => 'You must survive the apocalypse',
     'labels' => [
         'new_game' => 'Enter the world',
         'quit' => 'Exit game',

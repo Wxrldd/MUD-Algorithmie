@@ -2,12 +2,12 @@
 
 namespace Game\Console\Map;
 
+use Game\Console\Item\Bat;
+use Game\Console\Item\Cailloux;
 use Game\Console\Monsters\Negan;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use Game\Console\Item\Gun;
 use Game\Console\Npcs\Lsauveur;
-use Game\Console\Item\Rocket;
 
 class Map05 extends Blueprint {
 
@@ -20,7 +20,10 @@ class Map05 extends Blueprint {
     }
 
     public function items(): array {
-        return [ new Rocket() ];
+        return [ 
+            new Bat(),
+            new Cailloux()
+         ];
     }
 
     public function monsters(): array {

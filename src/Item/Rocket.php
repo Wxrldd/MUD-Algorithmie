@@ -13,12 +13,11 @@ public function description(): string {
   return "arme d'épaule propulsant des roquettes";
 }
 public function body_part(): string {
-  return "Shoulder";
+  return "shoulder";
  }
 public function statistics(): array {
   return [
-    "Damage" => 10,
-    "Wisdom" => 6
+    "Reach" => 11
   ];
  }
 }

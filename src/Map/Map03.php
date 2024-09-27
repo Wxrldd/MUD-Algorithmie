@@ -3,6 +3,7 @@
 namespace Game\Console\Map;
 
 use Game\Console\Item\Ax;
+use Game\Console\Item\Cailloux;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Monsters\Jadis;
@@ -19,7 +20,10 @@ class Map03 extends Blueprint {
     }
 
     public function items(): array {
-        return [ new Ax()];
+        return [ 
+            new Ax(),
+            new Cailloux()
+        ];
     }
 
     public function monsters(): array {

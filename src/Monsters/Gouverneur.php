@@ -5,6 +5,9 @@ namespace Game\Console\Monsters;
 use Jugid\Staurie\Game\Monster;
 
 class Gouverneur extends Monster {
+
+  private $life = 50;
+
 public function name() : string { 
   return "Gouverneur";
 }
@@ -29,5 +32,23 @@ public function skills(): array {
     'Force' => 2,
     'Attack' => 2
   ];
+ }
+ 
+ public function getAttack(): int
+ {
+  return rand(5, 10);
+ }
+ public function getDefense(): int
+ {
+     return 2;
+ }
+ public function getLife($damage): int
+ {   
+     $this->life -= $damage;
+     return $this->life;
+ }
+
+ public function fight() : array {
+     return [];
  }
 }

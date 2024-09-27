@@ -5,6 +5,8 @@ namespace Game\Console\Monsters;
 use Jugid\Staurie\Game\Monster;
 
 class Negan extends Monster {
+  
+  private $life = 50;
 public function name() : string { 
   return "Negan";
 }
@@ -15,19 +17,38 @@ public function level() : int {
   return 20;
 }
 public function health_points(): int {
-  return 5;
+  return $this->life;
  }
 public function defense(): int {
-  return 2;
+  return 15;
  }
 public function experience(): int {
-  return 3;
+  return 17;
  }
 public function skills(): array {
   return [
-    'Vitesse' => 5,
-    'Force' => 2,
-    'Attack' => 2
+    'Vitesse' => 15,
+    'Force' => 20,
+    'Attack' => 20
   ];
+ }
+
+
+ public function getAttack(): int
+ {
+  return rand(10, 20);
+ }
+ public function getDefense(): int
+ {
+     return 2;
+ }
+ public function getLife($damage): int
+ {   
+     $this->life -= $damage;
+     return $this->life;
+ }
+
+ public function fight() : array {
+     return [];
  }
 }

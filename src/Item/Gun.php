@@ -11,12 +11,12 @@ public function description(): string {
   return "arme à feu d’épaule semi-automatique à percussion centrale";
 }
 public function body_part(): string {
-  return "Hand";
+  return "hand";
  }
 public function statistics(): array {
   return [
     "Damage" => 4,
-    "Wisdom" => 4
+    "Reach" => 30
   ];
  }
 }
