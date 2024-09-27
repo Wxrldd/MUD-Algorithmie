@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'game/console',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '51feed9397e1e8669cce8621cb61d60182f9bd63',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         'game/console' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '51feed9397e1e8669cce8621cb61d60182f9bd63',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'jugid/staurie' => array(
-            'pretty_version' => '1.1.0',
-            'version' => '1.1.0.0',
-            'reference' => 'b31baa2a363b626f257e98136d9b2c29a61468b0',
+            'pretty_version' => '1.1.1',
+            'version' => '1.1.1.0',
+            'reference' => '33a1658159a4cf64cbd52fc2844e7a59caeaff41',
             'type' => 'library',
             'install_path' => __DIR__ . '/../jugid/staurie',
             'aliases' => array(),

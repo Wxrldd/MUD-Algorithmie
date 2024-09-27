@@ -4,15 +4,15 @@ namespace Game\Console\Monsters;
 
 use Jugid\Staurie\Game\Monster;
 
-class Monsters extends Monster {
+class Gouverneur extends Monster {
 public function name() : string { 
-  return "Zombie";
+  return "Gouverneur";
 }
 public function description(): string { 
-  return "Des morts vivants qui se nourrissent des vivants";
+  return "Le gouverneur, ce type fait bonne figure pour sa communauté, mais derrière des portes closes, il est dérangé.";
 }
 public function level() : int { 
-  return 1;
+  return 3;
 }
 public function health_points(): int {
   return 5;
