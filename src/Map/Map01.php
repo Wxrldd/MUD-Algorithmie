@@ -3,6 +3,7 @@
 namespace Game\Console\Map;
 
 use Jugid\Staurie\Component\Map\Blueprint;
+use Game\Console\Item\Bat;
 use Jugid\Staurie\Game\Position\Position;
 
 class Map01 extends Blueprint {
@@ -16,7 +17,7 @@ class Map01 extends Blueprint {
     }
 
     public function items(): array {
-        return [ ];
+        return [ new Bat() ];
     }
 
     public function monsters(): array {
