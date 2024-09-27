@@ -5,7 +5,7 @@ namespace Game\Console\Map;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
-use Game\Console\Npcs\Chuchoteur;
+use Game\Console\Npcs\Lock;
 use Game\Console\Monsters\Alpha;
 
 
@@ -16,7 +16,7 @@ class Map04 extends Blueprint {
         $this->position = new Position( -1, 0);
     }
     public function npcs(): array {
-        return [ new Chuchoteur()];
+        return [ new Lock()];
     }
 
     public function items(): array {

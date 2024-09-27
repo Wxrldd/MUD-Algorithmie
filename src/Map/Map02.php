@@ -6,7 +6,7 @@ use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
 use Game\Console\Monsters\Gouverneur;
-use Game\Console\Npcs\Chuchoteur;
+use Game\Console\Npcs\Jack;
 
 class Map02 extends Blueprint {
     private Position $position;
@@ -14,7 +14,7 @@ class Map02 extends Blueprint {
         $this->position = new Position(x: 0,y: 1);
     }
     public function npcs(): array {
-        return [ new Chuchoteur()];
+        return [ new Jack()];
     }
 
     public function items(): array {
@@ -26,7 +26,7 @@ class Map02 extends Blueprint {
         return [ new Gouverneur()];
     }
     public function name(): string {
-        return "La communauté";
+        return "Woodbury";
     }
     public function description(): string {
         return "Une zone plein de titans, des êtres surhumains";

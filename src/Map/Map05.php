@@ -6,7 +6,8 @@ use Game\Console\Monsters\Negan;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
-use Game\Console\Npcs\Chuchoteur;
+use Game\Console\Npcs\Lsauveur;
+
 
 class Map05 extends Blueprint {
 
@@ -15,7 +16,7 @@ class Map05 extends Blueprint {
         $this->position = new Position( 1, 0);
     }
     public function npcs(): array {
-        return [ new Chuchoteur()];
+        return [ new Lsauveur()];
     }
 
     public function items(): array {

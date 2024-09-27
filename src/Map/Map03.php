@@ -6,7 +6,7 @@ use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
 use Game\Console\Item\Gun;
 use Game\Console\Monsters\Jadis;
-use Game\Console\Npcs\Chuchoteur;
+use Game\Console\Npcs\Peter;
 
 class Map03 extends Blueprint {
 
@@ -15,7 +15,7 @@ class Map03 extends Blueprint {
         $this->position = new Position( 0, -1);
     }
     public function npcs(): array {
-        return [ new Chuchoteur()];
+        return [ new Peter()];
     }
 
     public function items(): array {

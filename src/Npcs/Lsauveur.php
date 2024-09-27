@@ -3,15 +3,15 @@ namespace Game\Console\Npcs;
 
 use Jugid\Staurie\Game\Npc;
 
-class Chuchoteur extends Npc {
+class Lsauveur extends Npc {
 public function name() : string {
-  return 'Chuchoteur';
+  return 'Membre';
  }
 public function description() : string {
-  return "Un survivant membre du groupe d'Alpha";
+  return "Un survivant membre du sanctuaire";
  }
 public function speak() : string|array {
-  return "Je sais me fondre dans la masse";
+  return "Je suis Negan";
  }
 
 }
