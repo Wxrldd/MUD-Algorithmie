@@ -2,13 +2,12 @@
 
 namespace Game\Console\Map;
 
-use Game\Console\Monsters\Monsters;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use Game\Console\Item\Ax;
 use Game\Console\Item\Gun;
-use Game\Console\Item\Scythe;
-use Game\Console\Character\Negan;
+use Game\Console\Npcs\Chuchoteur;
+use Game\Console\Monsters\Alpha;
+
 
 class Map04 extends Blueprint {
 
@@ -17,18 +16,18 @@ class Map04 extends Blueprint {
         $this->position = new Position( -1, 0);
     }
     public function npcs(): array {
-        return [ new Negan()];
+        return [ new Chuchoteur()];
     }
 
     public function items(): array {
-        return [ new Gun(), new Ax(), new Scythe()];
+        return [ new Gun()];
     }
 
     public function monsters(): array {
-        return [ new Monsters()];
+        return [ new Alpha()];
     }
     public function name(): string {
-        return "Test zone4";
+        return "Lockdown";
     }
     public function description(): string {
         return "Bienvenu(e) jeunes arrivants. Equipez vous de votre arme avant de vous y engager car cet endroit vous réserve bien de surprises";

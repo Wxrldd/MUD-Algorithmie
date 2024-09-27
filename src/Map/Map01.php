@@ -2,13 +2,8 @@
 
 namespace Game\Console\Map;
 
-use Game\Console\Monsters\Monsters;
 use Jugid\Staurie\Component\Map\Blueprint;
 use Jugid\Staurie\Game\Position\Position;
-use Game\Console\Item\Ax;
-use Game\Console\Item\Gun;
-use Game\Console\Item\Scythe;
-use Game\Console\Character\Negan;
 
 class Map01 extends Blueprint {
 
@@ -17,16 +12,15 @@ class Map01 extends Blueprint {
         $this->position = new Position( 0, 0);
     }
     public function npcs(): array {
-        return [ new Negan()];
+        return [ ];
     }
 
     public function items(): array {
-        return [ new Gun(), new Ax(), new Scythe()];
-       
+        return [ ];
     }
 
     public function monsters(): array {
-        return [ new Monsters()];
+        return [];
     }
     public function name(): string {
         return "The Walking Dead";
