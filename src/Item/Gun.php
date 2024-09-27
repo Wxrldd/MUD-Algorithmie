@@ -8,7 +8,7 @@ public function name() : string {
   return "MK"; 
 }
 public function description(): string { 
-  return " arme à feu d’épaule semi-automatique à percussion centrale";
+  return "arme à feu d’épaule semi-automatique à percussion centrale";
 }
 public function body_part(): string {
   return "Hand";
