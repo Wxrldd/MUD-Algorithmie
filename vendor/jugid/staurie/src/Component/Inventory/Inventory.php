@@ -3,6 +3,7 @@
 namespace Jugid\Staurie\Component\Inventory;
 
 use Jugid\Staurie\Component\AbstractComponent;
+use Jugid\Staurie\Component\Character\MainCharacter;
 use Jugid\Staurie\Component\Console\Console;
 use Jugid\Staurie\Component\Inventory\CoreFunctions\DropFunction;
 use Jugid\Staurie\Component\Inventory\CoreFunctions\InventoryFunction;
@@ -13,9 +14,9 @@ use Jugid\Staurie\Game\Item;
 
 class Inventory extends AbstractComponent {
 
-    private array $inventory = [];
+    public array $inventory = [];
 
-    private int $size;
+    public int $size;
 
     final public function getEventName() : array {
         $events = ['inventory.view','inventory.size', 'inventory.give'];
